@@ -1,0 +1,48 @@
+
+
+body{
+    cursor: url(./assets/mouse/pointer.png) 32 32, auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url(./assets/mario-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+body a, body button, /* Add other clickable elements as needed */
+body [onclick] {
+  cursor: url('./assets/mouse/clicked.png') 32 32, pointer;
+}
+
+
+#board{
+    width: 540px;
+    height: 540px;
+    margin: 0 auto;
+    background: url(./assets/soil.png) no-repeat;
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        width: 180px;
+        height: 180px;
+        background-image: url(./assets/pipe.png);
+        background-size: cover;
+        img{
+            width: 100px;
+            height: 100px;
+            user-select: none;
+        }
+    }
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 20px;
+}
